@@ -10,8 +10,18 @@ const Chatbot = () => {
     if (message.trim() !== "") {
       try {
         $(".welcome-box").remove();
-        var userMessage = $('#messageText').val();
-        $(".media-list").append('<li class="media"><div class="usermessage"><div class="author">' +"<b> You </b><div class='userinput_box'>"+userMessage+"</div></div></div></div></li>");
+              var userMessage = $('#messageText').val();
+              $(".media-list").append(`
+        <li class="media">
+          <div class="usermessage">
+            <div class="author">
+              <b>You</b>
+              <div class='userinput_box'>${userMessage}</div>
+            </div>
+          </div>
+        </li>
+      `);
+
 
         const data = { 
           input_text: userMessage,
@@ -30,7 +40,17 @@ const Chatbot = () => {
         const responseData = await response.json();
         const answer = responseData.answer;
 
-          $(".media-list").append('<li class="media"><div class="answer"><div class="bot">' +"<b> A11Y Chatbot </b><div class='botoutput_box'>"+  answer + '</div></div></div></div></li>');
+        $(".media-list").append(`
+        <li class="media">
+          <div class="answer">
+            <div class="bot">
+              <b>A11Y Chatbot</b>
+              <div class='botoutput_box'>${answer}</div>
+            </div>
+          </div>
+        </li>
+      `);
+      
 
         // Clear the message input
         $('#messageText').val('');
