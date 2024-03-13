@@ -64,7 +64,7 @@ const Chatbot = () => {
     <div className="container">
       <div className="welcome-box">
         <h2>Welcome to A11Y Chatbot</h2>
-        <p>Real-time communication made simple and accessible</p>
+        <p>Our chatbot teaches you how to build Websites and Apps accessible to all. Let's make the digital world welcoming for all. Start your easy-to-follow journey with us today!</p>
       </div>
       <div className="media-list"></div>
       <div className="chatbox">
@@ -91,7 +91,11 @@ const Chatbot = () => {
                   <button className="close" title="close" onClick={toggleMoreInfo}></button>
                   </div>
                   <div className="info_content_con">
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                  Empowering accessibility: Our chat bot is designed to provide quick and accurate answers to WCAG-related questions, promoting inclusive and user-friendly digital experiences."
+
+Navigating WCAG with ease: Utilize my chat bot for instant guidance on Web Content Accessibility Guidelines, ensuring your digital content meets the highest standards of accessibility."
+
+Your WCAG companion: With Our chat bot, access concise insights and solutions to make your online presence inclusive, aligning with WCAG principles for a more accessible web
                   </div>
                   
                 </div>
