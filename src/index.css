@@ -68,7 +68,6 @@ h1 {
   background-image: var(--theme-image);
 }
 
-
 .container {
   display: flex;
   flex-direction: column;
@@ -76,13 +75,13 @@ h1 {
   align-items: center;
   margin: auto;
   width: 60%;
-  padding-top: 6vh; 
+  padding-top: 15.5vh; 
 }
 .welcome-box{
-  margin-bottom: 2.5vh;
+  display: none;
 }
 .mobile-welcome-box{
-  display: none;
+  display: block;
 }
 .inside-con{
   width: 100%;
@@ -318,7 +317,7 @@ button{
   background-size: cover;
   background-image: var(--close-image);
 }
-@media (max-width: 650px){
+@media (max-width: 770px){
   h2{
     font-size: 24px;
     text-align: center;
@@ -328,13 +327,7 @@ button{
    }
   .container{
     width: 100%;
-  }
-  .welcome-box{
-    display: none;
-  }
-  .mobile-welcome-box{
-    display:block;
-    width: 90%;
+    padding-top: 6vh;
   }
   .inside-con{
     height: 90vh;
@@ -357,5 +350,17 @@ button{
   }
   .popup_con {
     width: 80%;
+  }
+}
+@media (min-width: 1600px){
+  .welcome-box{
+    display: block;
+    margin-bottom: 2.5vh;
+}
+  .mobile-welcome-box{
+    display:none;
+  }
+  .container {
+    padding-top: 6vh; 
   }
 }
