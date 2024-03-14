@@ -65,14 +65,11 @@ const Chatbot = () => {
     <div className="welcome-box">
         <h2>Welcome to A11Y Chatbot</h2>
         <p>Our chatbot teaches you how to build Websites and Apps accessible to all. Let's make the digital world welcoming for all. Start your easy-to-follow journey with us today!</p>
-<<<<<<< HEAD
       </div>
       <div className="inside-con">
       <div className="mobile-welcome-box">
         <h2>Welcome to A11Y Chatbot</h2>
         <p>Our chatbot teaches you how to build Websites and Apps accessible to all. Let's make the digital world welcoming for all. Start your easy-to-follow journey with us today!</p>
-=======
->>>>>>> c31b3d0744771ab348923ad456c7364888a8c240
       </div>
       <div className="media-list"></div>
       <div className="chatbox">
@@ -100,16 +97,7 @@ const Chatbot = () => {
                   <button className="close" title="close" onClick={toggleMoreInfo}></button>
                   </div>
                   <div className="info_content_con">
-<<<<<<< HEAD
                   Empowering accessibility: Our chat bot is designed to provide quick and accurate answers to WCAG-related questions, promoting inclusive and user-friendly digital experiences." Navigating WCAG with ease: Utilize my chat bot for instant guidance on Web Content Accessibility Guidelines, ensuring your digital content meets the highest standards of accessibility." Your WCAG companion: With Our chat bot, access concise insights and solutions to make your online presence inclusive, aligning with WCAG principles for a more accessible web</div>
-=======
-                  Empowering accessibility: Our chat bot is designed to provide quick and accurate answers to WCAG-related questions, promoting inclusive and user-friendly digital experiences."
-
-Navigating WCAG with ease: Utilize my chat bot for instant guidance on Web Content Accessibility Guidelines, ensuring your digital content meets the highest standards of accessibility."
-
-Your WCAG companion: With Our chat bot, access concise insights and solutions to make your online presence inclusive, aligning with WCAG principles for a more accessible web
-                  </div>
->>>>>>> c31b3d0744771ab348923ad456c7364888a8c240
                   
                 </div>
               </div>
