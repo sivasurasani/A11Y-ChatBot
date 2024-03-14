@@ -76,10 +76,25 @@ h1 {
   align-items: center;
   margin: auto;
   width: 60%;
-  padding-top: 9vh;
-  height: 85vh;
+  padding-top: 6vh; 
 }
-
+.welcome-box{
+  margin-bottom: 2.5vh;
+}
+.mobile-welcome-box{
+  display: none;
+}
+.inside-con{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 75vh;
+  padding-bottom: 3%;
+  border: 1.5px solid #9b9b9b;
+  border-radius: 26px;
+}
 h2{
  font-size: 32px;
  font-weight:900;
@@ -105,7 +120,7 @@ form{
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
+  width: 90%;
   border-radius: 26px;
   margin: auto;
   border: 1.5px solid #9b9b9b;
@@ -159,7 +174,7 @@ button{
 }
 
 .media-list{
-  width: 100%;
+  width: 90%;
   height:max-content;
   overflow: auto;
   margin: 0.5rem auto;
@@ -181,13 +196,25 @@ button{
   text-align: right;
   max-width: 70%;
 }
-
+.name-dp-con{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: flex-end;
+}
+.name-dp-con-bot{
+  display: flex;
+  flex-direction:row-reverse;
+  align-items:center;
+  justify-content: flex-end;
+}
 .userinput_box{
   background-color: #1A1AE5;
   color: #F0F0F5;
   padding: 1rem;
   border-radius: 18px  0px 18px 18px;
   text-align: justify;
+  margin-right: 3.2rem;
   /*box-shadow: -4px 5px 5px rgba(0, 0, 0, 0.25);*/
 }
 
@@ -209,12 +236,34 @@ button{
   padding: 1rem;
   border-radius: 0px  18px 18px 18px;
   text-align: justify;
+  margin-left: 3.2rem;
   /*box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.25);*/
 }
 .botoutput_typing{
   font-size: 16px;
   color: var(--secondary-color);
   opacity: .5;
+  margin-left: 3.2rem;
+}
+.user-dp{
+  width: 40px;
+  height: 40px;
+  background-image: url(../Images/User.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: .7rem;
+  border-radius: 55%;
+}
+.bot-dp{
+  width: 40px;
+  height: 40px;
+  background-image: url(../Images/chatbot.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: .7rem;
+  border-radius: 50%;
 }
 /*Popup Styling*/
 .modal,
@@ -237,7 +286,7 @@ button{
   left: 50%;
   border-radius: 18px;
   background: var(--primary-color);
-  width: 30%;
+  width: 40%;
   padding: 3%;
   z-index: 100;
   transform: translate(-50%, -50%);
@@ -274,12 +323,34 @@ button{
     font-size: 24px;
     text-align: center;
    }
-   
+   p{
+    font-size: 14px;
+   }
   .container{
+    width: 100%;
+  }
+  .welcome-box{
+    display: none;
+  }
+  .mobile-welcome-box{
+    display:block;
     width: 90%;
+  }
+  .inside-con{
+    height: 90vh;
+    border: none;
   }
   .author,.bot{
     max-width: 95%;
+  }
+  b{
+    font-size: 14px;
+  }
+  .userinput_box,.botoutput_box,.botoutput_typing{
+    font-size: 12px;
+  }
+  .input-box{
+    font-size: 16px;
   }
   .popup_heading {
     font-size: 24px;
