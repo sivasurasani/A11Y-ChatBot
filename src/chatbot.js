@@ -40,9 +40,15 @@ const Chatbot = () => {
 
         const responseData = await response.json();
         const answer = responseData.answer;
+        let contentAnswer;
+        if (answer.includes('**Answer:**')) {
+            contentAnswer = answer.split('**Answer:**')[1].trim();
+        } else {
+            contentAnswer = answer;
+        }
         $(".type").remove();
        
-        $(".media-list").append(`<li class="media"><div class="answer"><div class="bot"><div class="name-dp-con-bot"><b> A11Y Chatbot </b><div class="bot-dp"></div></div><div class='botoutput_box'>${answer}</div></div></div></div></li>`);
+        $(".media-list").append(`<li class="media"><div class="answer"><div class="bot"><div class="name-dp-con-bot"><b> A11Y Chatbot </b><div class="bot-dp"></div></div><div class='botoutput_box'>${contentAnswer}</div></div></div></div></li>`);
         mediaList.scrollTop = mediaList.scrollHeight;      
       }
        catch (error) {
