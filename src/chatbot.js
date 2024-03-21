@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import $ from "jquery";
 
 const Chatbot = () => {
+  const handlereload=()=>{
+    window.location.reload();
+  }
   const [message, setMessage] = useState("");
   const [moreinfomodal, setmoreinfoModal] = useState(false);
   const toggleDarkTheme = () => {
@@ -55,7 +58,7 @@ const Chatbot = () => {
   return (
     <>
      <div className="navbar">
-      <h1>A11Y Chatbot</h1>
+      <div className="logo" onClick={handlereload}></div>
       <nav>
         <div className="info" title="Information" onClick={toggleMoreInfo}></div>
         <div onClick={toggleDarkTheme} className="icon" title="Change Theme"></div>

@@ -11,6 +11,7 @@ body{
   text-align: justify;
   background-color: var(--primary-color);
   position: relative;
+  transition-duration: .5s;
 }
 :root{
   --primary-color:#E3E3E3;
@@ -20,6 +21,7 @@ body{
   --thumb-sec-color:#808080;
   --theme-image:url(../Images/darkmode.svg);
   --close-image: url(../Images/closelight.svg);
+  --send-image:url(../Images/send.svg);
 }
 .dark-theme{
   --primary-color:#1F2020;
@@ -29,6 +31,7 @@ body{
   --thumb-sec-color:#a6a6a6;
   --theme-image:url(../Images/lightmode.svg);
   --close-image: url(../Images/close_dark.svg);
+  --send-image:url(../Images/send_dark.svg);
 }
 .navbar {
   display: flex;
@@ -46,11 +49,16 @@ nav {
   align-items: center;
 }
 
-h1 {
-  font-size: 18px;
-  font-weight: 900;
-  color: #E5E8EB;
+.logo{
+  background-image: url(../Images/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+ width:200px;
+ height: 50px;
 }
+
 .icon,.info{
   cursor: pointer;
   width: 30px;
@@ -146,7 +154,7 @@ button{
 }
 
 .send{
-  background-image: url(../Images/send.svg);
+  background-image: var(--send-image);
   width: 26px;
   height: 26px;
   background-position: center;
